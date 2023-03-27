@@ -25,7 +25,20 @@
         h3 {
             background-color: lightslategray;
         }
-        
+        h3.title {
+            color: darkred;
+        }
+        h3.title_2 {
+            background-color: lightpink;
+        }
+        p {
+            background-color: darkolivegreen;
+            width: 400px;
+            transition: 0.3s; /* 1s = 1000ms ,  부드럽게 배경색이 바뀜*/
+        }
+        p:hover {
+            background-color: #fff; /* p태그에 마우스를 올릴 경우 배경색이 지정한 색으로 바뀜 */
+        }
     </style>
 </head>
 <body>
@@ -42,10 +55,13 @@
 
     <h1>제목입니다 1</h1>
     <h2>제목입니다 2</h2>
-    <h3>제목입니다 3</h3>
+    <h3 class="title">제목입니다 3</h3>
+    <h3 class="title_2">제목입니다 3_반갑습니다</h3>
     <h4>제목입니다 4</h4>
     <h5>제목입니다 5</h5>
     <h6>제목입니다 6</h6>
+
+    <p>문단을 나타내는 태그</p>
 
 </body>
 </html>
