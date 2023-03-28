@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블럭,인라인</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .one {
+            background-color: rgb(111, 121, 167);
+            width: 300px;
+            height: 300px;
+            /* 부모의 공간까지 가짐 , 크기 조절 가능 */
+        }
+
+        .inline {
+            background-color: goldenrod;
+            /* 자기 자신의 공간만 가짐 , 크기 인식 못함
+            인라인 요소 안에 블럭요소 넣는 건 불가능 */
+            width: 300px;
+            height: 300px;
+        }
+
+        .two {
+            border: 1px solid #000;
+        }
+
+        .two span {
+            background-color: green;
+        }
+
+        .three span {
+            display: inline-block;
+            background-color: red;
+            width: 150px;
+            height: 40px;
+        }
+
+        /* display: block 강제로 인라인요소를 블럭요소로 바꿈 */
+        /* display: lnline-block 블럭요소와 인라인요소 중간(크기설정가능) */
+
+        /* 인라인요소지만 공간이 적용됨(img,button) */
+        .lnlineBlock img {
+            width: 200px; 
+        }
+        .lnlineBlock button {
+            width: 100px; height: 50px;
+        }
+        p a {
+            background-color: palevioletred;
+        }
+        .nike img {
+            width: 100px; height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">block요소</div>
+    <span class="inline">inline요소</span>
+
+    <div class="two">
+        블록요소 안에 <span class="">인라인요소</span>를 적용합니다
+    </div>
+
+    <div class="three">
+        블록요소 안에 <span class="">인라인요소</span>를 적용합니다
+    </div>
+
+    <div>
+        <h4>위첨자 태그</h4>
+        <p>2<sup>n</sup></p>
+        <!--2의 n승을 나타냄 -->
+        <h4>아래첨자 태그</h4>
+        <p>공기의 원소 기호는 H<sub>2</sub>O입니다</p>
+    </div>
+
+    <div>
+        <h4>인라인요소 소개</h4>
+        <p>글자의 <b>굵기</b></p>
+        <p>글자의 <strong>굵기(중요한 내용임을 명시)</strong></p>
+        <!--중요한 내용임을 읽어줌 -->
+        <hr> <!-- 밑줄 표시 -->
+        <p>기울림체 글자를 <i>기울림</i></p>
+        <p>기울림체 글자를 <em>기울림(중요한 내용임을 명시)</em></p>
+        <!--중요한 내용임을 읽어줌 -->
+        <p><a href="https://www.naver.com/" target="_blank">링크연결</a></p>
+        <!-- target="_blank" 지금 화면은 그대로 두고 옆창에 링크접속 -->
+    </div>
+
+    <div class="lnlineBlock">
+        <h4>인라인요소 중 공간을 인식함</h4>
+        <a href="https://www.nike.com/kr/" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbLAfIrMcb72stqDd7AwovOqIEcPx2YbC0HA&usqp=CAU" alt="nkielogo">
+        </a>
+        <br>
+        <button type="button">클릭</button>
+    
+    </div>
+
+
+
+</body>
+
+</html>
