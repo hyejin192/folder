@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+/* 서버에서 한글 깨짐 현상 방지 */
+/* 주석처리 */
+* {
+    margin: 0;
+    padding: 0;
+}
+    /* 예측하지 못하는 공간도 적용됨 */
+
+h1 {
+    color: rgb(30, 82, 30);
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+
+li {
+    /* border: border-width border-style border-color; */
+    border-bottom: 5px solid gray;
+    /* li의 공간 = padding,width,border
+    나의(li)의 공간 = 넓이(300) + 패딩(20+20) + 선(1+1) */
+    padding: 10px;
+    width: 300px;
+    box-sizing: border-box;
+    /* 패딩과 선을 포함한 넓이 = 300px 유지 , 공간 안에 padding과 border를 포함 */
+    margin: 20px;
+    /* li의 공간 밖 */
+}
+
+.m {}
+
+.m span {
+    border: 2px dotted navy;
+    margin: 10px;
+    /* span태그는 인라인요소이므로 줄바꿈이 일어나지 않음 하지만 블록요소로 변경(display-block)하면 줄바꿈이 일어남 */
+}
+
+.mp {margin-top: 30px;}
+
+.mp .one {
+    border: 1px solid red;
+    width: 200px;
+    padding: 20px; /* =위,오른쪽,밑,왼쪽 포함한 값 */
+    padding: 10px 20px 30px 40px;
+    padding: 10px 20px 30px; /* 위,좌우,아래 */
+    padding: 10px 20px; /*상하 좌우*/
+}
+
+.mp .two {
+    border: 1px solid orange;
+    width: 200px;
+    margin: 0 auto; /* =margin-left: auto; , margin-right: auto; ,  상하 좌우 */
+}
+
+.dl{
+    margin-top: 30px;
+    width: 400px;
+}
+.dl dl{
+    border-top: 1px solid blue;
+}
