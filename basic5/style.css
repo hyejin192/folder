@@ -1,0 +1,143 @@
+@charset "UTF-8";
+/* 한글 깨짐 방지 */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    text-align: center;
+    /* text 정열 - 센터 */
+}
+/* wrab start */
+.wrab {
+    width: 900px;
+    margin: 0 auto;
+    /* 상하, 좌우 */
+    padding: 10% 0;
+    /* 부모의 넓이 기준 */
+}
+.wrab div {
+    margin-top: 50px;
+    border-top: 1px solid black;
+}
+.wrab>div h2 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* table1 start */
+.table1 table {
+    width: 100%;
+    border: 1px solid navy;
+}
+
+.table1 table tr {
+    border: 1px solid navy;
+}
+
+.table1 table tr th {
+    border: 1px solid navy;
+}
+
+.table1 table tr td {
+    border: 1px solid navy;
+}
+
+/* table1-2 start */
+.table1-2 table {
+    width: 100%;
+    border: 1px solid gray;
+    text-align: center;
+}
+.table1-2 table tr th {
+    border: 1px solid gray;
+}
+.table1-2 table tr td {
+    border: 1px solid gray;
+}
+
+/* table2 start */
+.table2 table {
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+    border-collapse: collapse; /* 표의 선사이의 공간을 없애줌 */
+    background-color: lavender;
+}
+
+.table2 table tr {
+    border: 1px solid black;
+}
+.table2 table tr th {
+    border: 1px solid black;
+}
+.table2 table tr td {
+    border: 1px solid black;
+}
+.table2 table tr:nth-child(1) { 
+/* tr:nth-child tr의 자식 중 첫번째를 뜻함 */
+    border-bottom: 3px dotted #000;
+}
+.table2 table tr:nth-child(2) {
+/* tr:nth-child tr의 자식 중 두번째를 뜻함 */
+    height: 100px;
+}
+.table2 table tr th:nth-child(1) {
+/* th:nth-child th의 자식 중 첫번째를 뜻함 */
+    width: 20%;
+}
+.table2 table tr th:nth-child(2) {
+    width: 60%;
+}
+.table2 table tr th:nth-child(3) {
+    width: 20%;
+}
+/* table3 start */
+.table3 table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.table3 table,
+.table3 table th,
+.table3 table td {
+    border: 1px solid #ccc;
+}
+/* table4 start */
+.table4 table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.table4 table,
+.table4 table th,
+.table4 table td {
+    border: 1px solid #ccc;
+}
+
+/* table5 start */
+.table5 table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+.table5 table,
+.table5 table th,
+.table5 table td {
+    border: 1px solid orange;
+}
+
+/* table6 start */
+.table6 table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+.table6 table,
+.table6 table th,
+.table6 table td {
+    border: 1px solid blueviolet;
+}
