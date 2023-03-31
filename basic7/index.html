@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form tag</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>사용자로부터 입력받기</h2>
+    <div class="첫째">
+        <form action="#">
+            <!-- for의 값과 id의 값 항상 동일 -->
+            <label for="name">이름</label>
+            <input type="text" id="name" name="my_name">
+            <br><br>
+            <label for="age">나이</label>
+            <input type="number" id="age" value="0" name="my_age">
+            <br><br>
+            <!-- type이 submit일 경우에 form action의 값으로 제출됨 -->
+            <button type="submit">제출</button>
+            <button type="reset">초기화</button>
+        </form>
+    </div>
+    <div class="둘째">
+        <form action="#">
+            <label for="txt">text
+                <input type="text" id="txt" name="my_txt" placeholder="5자 이하" maxlength="5">
+            </label>
+            <br><br>
+            <label for="pwd">password
+                <input type="password" id="pwd" name="my_pwd" placeholder="4자 이상 입력하세요" minlength="4">
+            </label>
+            <br><br>
+            <button type="submit">제출</button>
+            
+        </form>
+    </div>
+    <div class="셋째">
+        <label for="num">number</label>
+        <input type="number" id="num" name="my_num" min="0" max="10">
+
+        <label for="rg">range</label>
+        <input type="range" id="rg" max="100" step="5">
+
+        <label for="dt">date</label>
+        <input type="date" min="2020-01-01" max="2030-12-31">
+    </div>
+    <div class="넷째">
+        <h3>select,option 태그</h3>
+        <label for="lang">언어</label>
+        <select name="my_lang" id="lang">
+            <option value="">-- 언어선택 --</option>
+            <option value="javaScript">자바스크립트</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="React">리액트</option>
+        </select>
+    </div>
+    <div class="다섯째">
+        <fieldset> <!-- 범위 세팅 , 기본스타일 적용됨(테두리,그림자) -->
+            <legend>성별</legend> <!-- 제목을 위주로 테두리 형성 -->
+            <input type="radio" name="gender" checked>남자
+            <input type="radio" name="gender">여자
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>지역선택</legend>
+            <input type="radio" name="area" checked>서울
+            <input type="radio" name="area">경기
+            <input type="radio" name="area">인천
+            <input type="radio" name="area">부산
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>좋아하는 과일 모두 선택</legend>
+            <!-- checkbox : 중복선택 가능 -->
+            <input type="checkbox" name="fruit" checked>사과
+            <input type="checkbox" name="fruit">배
+            <input type="checkbox" name="fruit">토마토
+            <input type="checkbox" name="fruit">수박
+        </fieldset>
+    </div>
+</body>
+</html>
